@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_100sdp">100dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_10sdp">10dp</dimen>
+    <dimen name="_10sp">10sp</dimen>
+    <dimen name="_120sdp">120dp</dimen>
+    <dimen name="_12dp">12dp</dimen>
+    <dimen name="_12sdp">12dp</dimen>
+    <dimen name="_12sp">12sp</dimen>
+    <dimen name="_14dp">14dp</dimen>
+    <dimen name="_14sdp">14dp</dimen>
+    <dimen name="_14sp">14sp</dimen>
+    <dimen name="_15sdp">15dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_16sdp">16dp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_18dp">18dp</dimen>
+    <dimen name="_18sdp">18dp</dimen>
+    <dimen name="_18sp">18sp</dimen>
+    <dimen name="_20dp">22dp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+    <dimen name="_20sp">20sp</dimen>
+    <dimen name="_24dp">26dp</dimen>
+    <dimen name="_28dp">30dp</dimen>
+    <dimen name="_2dp">4dp</dimen>
+    <dimen name="_30sdp">30dp</dimen>
+    <dimen name="_32dp">34dp</dimen>
+    <dimen name="_350dp">350dp</dimen>
+    <dimen name="_36dp">38dp</dimen>
+    <dimen name="_38dp">40dp</dimen>
+    <dimen name="_3sdp">3dp</dimen>
+    <dimen name="_40dp">42dp</dimen>
+    <dimen name="_40sdp">40dp</dimen>
+    <dimen name="_45sdp">45dp</dimen>
+    <dimen name="_48dp">50dp</dimen>
+    <dimen name="_4dp">6dp</dimen>
+    <dimen name="_4sdp">4dp</dimen>
+    <dimen name="_50dp">50dp</dimen>
+    <dimen name="_56dp">58dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_5sdp">5dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_62dp">64dp</dimen>
+    <dimen name="_6dp">6dp</dimen>
+    <dimen name="_72dp">72dp</dimen>
+    <dimen name="_7sdp">7dp</dimen>
+    <dimen name="_80sdp">80dp</dimen>
+    <dimen name="_8dp">10dp</dimen>
+    <dimen name="_8sdp">8dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="camera_icon_size">36dp</dimen>
+    <dimen name="compass">270dp</dimen>
+
+
+
+    <dimen name="disabled_alpha_material_dark">0.3</dimen>
+    <dimen name="disabled_alpha_material_light">0.26</dimen>
+    <dimen name="fastscroll_default_thickness">8dp</dimen>
+    <dimen name="fastscroll_margin">0dp</dimen>
+    <dimen name="fastscroll_minimum_range">50dp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_14">16sp</dimen>
+    <dimen name="font_size_16">18sp</dimen>
+    <dimen name="font_size_20">22sp</dimen>
+    <dimen name="font_size_24">26sp</dimen>
+    <dimen name="half_space">4dp</dimen>
+    <dimen name="highlight_alpha_material_colored">0.26</dimen>
+    <dimen name="highlight_alpha_material_dark">0.2</dimen>
+    <dimen name="highlight_alpha_material_light">0.12</dimen>
+    <dimen name="hint_alpha_material_dark">0.5</dimen>
+    <dimen name="hint_alpha_material_light">0.38</dimen>
+    <dimen name="hint_pressed_alpha_material_dark">0.7</dimen>
+    <dimen name="hint_pressed_alpha_material_light">0.54</dimen>
+    <dimen name="icon_size_24">28dp</dimen>
+    <dimen name="icon_size_28">32dp</dimen>
+    <dimen name="icon_size_48">48dp</dimen>
+    <dimen name="information_bottom_margin">24dp</dimen>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
+    <dimen name="line_spacing_3sp">3dp</dimen>
+    <dimen name="map_icon_size">38dp</dimen>
+    <dimen name="map_size">400dp</dimen>
+
+
+    <dimen name="pos_tick_size">24dp</dimen>
+    <dimen name="space">8dp</dimen>
+    <dimen name="subtitle_corner_radius">2dp</dimen>
+    <dimen name="subtitle_outline_width">2dp</dimen>
+    <dimen name="subtitle_shadow_offset">2dp</dimen>
+    <dimen name="subtitle_shadow_radius">2dp</dimen>
+    <dimen name="tooltip_corner_radius">2dp</dimen>
+    <dimen name="tooltip_horizontal_padding">16dp</dimen>
+    <dimen name="tooltip_margin">8dp</dimen>
+    <dimen name="tooltip_precise_anchor_extra_offset">8dp</dimen>
+    <dimen name="tooltip_precise_anchor_threshold">96dp</dimen>
+    <dimen name="tooltip_vertical_padding">6.5dp</dimen>
+    <dimen name="tooltip_y_offset_non_touch">0dp</dimen>
+    <dimen name="tooltip_y_offset_touch">16dp</dimen>
+
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_26">26dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+
+
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_22">22sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_26">26sp</dimen>
+    <dimen name="sp_28">28sp</dimen>
+
+    <!--    screen language-->
+    <dimen name="width_button_apply">74dp</dimen>
+    <dimen name="height_button_apply">32dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="height_item_photo">180dp</dimen>
+
+</resources>

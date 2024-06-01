@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="CameraSound_entries">
+        <item>@string/Soundon</item>
+        <item>@string/SoundOff</item>
+    </array>
+    <array name="altitude">
+        <item>m</item>
+        <item>f</item>
+    </array>
+    <array name="autosize_text_sizes">
+        <item>7sp</item>
+        <item>8sp</item>
+        <item>9sp</item>
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>14sp</item>
+        <item>16sp</item>
+        <item>18sp</item>
+        <item>20sp</item>
+    </array>
+    <array name="compass_entries">
+        <item>@string/True_North</item>
+        <item>@string/Magnetic_North</item>
+    </array>
+    <array name="coordi_entries">
+        <item>@string/Dec_Degs</item>
+        <item>@string/Dec_Degs_Micro</item>
+        <item>@string/Dec_Mins</item>
+        <item>@string/Deg_Mins_Secs</item>
+        <item>@string/Dec_Mins_Secs</item>
+        <item>@string/UTM</item>
+        <item>@string/MGRS_USNG</item>
+    </array>
+    <array name="coordi_sub_values">
+        <item>dec_deg</item>
+        <item>dec_deg_micro</item>
+        <item>dec_mins</item>
+        <item>deg_mins_secs</item>
+        <item>dec_mins_secs</item>
+        <item>utm</item>
+        <item>mgrs_usng</item>
+    </array>
+    <array name="datetime_format_arry">
+        <item>dd/MM/yy hh:mm a</item>
+        <item>MM/dd/yy</item>
+        <item>dd/MM/yy</item>
+        <item>dd/MM/yy HH:mm</item>
+        <item>dd/MM/yyyy</item>
+        <item>dd/MM/yyyy HH:mm</item>
+        <item>dd/MM/yyyy hh:mm a</item>
+        <item>dd/MM/yyyy hh:mm:ss a</item>
+        <item>dd/MM/yy hh:mm:ss a</item>
+        <item>MM/dd/yy HH:mm</item>
+        <item>MM/dd/yy hh:mm a</item>
+        <item>MM/dd/yy hh:mm:ss a</item>
+        <item>MM/dd/yyyy</item>
+        <item>MM/dd/yyyy HH:mm</item>
+        <item>MM/dd/yyyy hh:mm a</item>
+        <item>MM/dd/yyyy hh:mm:ss a</item>
+        <item>yyyy/MM/dd HH:mm</item>
+        <item>yyyy/MM/dd hh:mm a</item>
+        <item>yyyy/MM/dd hh:mm:ss a</item>
+        <item>yyyyMMdd</item>
+        <item>dd.MM.yy</item>
+        <item>dd.MM.yy HH:mm</item>
+        <item>dd.MM.yy hh:mm a</item>
+        <item>dd.MM.yy hh:mm:ss a</item>
+        <item>dd.MM.yyyy</item>
+        <item>dd.MM.yyyy HH:mm</item>
+        <item>dd.MM.yyyy hh:mm a</item>
+        <item>dd.MM.yyyy hh:mm:ss a</item>
+        <item>MM.dd.yy</item>
+        <item>MM.dd.yy HH:mm</item>
+        <item>MM.dd.yy hh:mm a</item>
+        <item>MM.dd.yy hh:mm:ss a</item>
+        <item>MM.dd.yyyy</item>
+        <item>MM.dd.yyyy HH:mm</item>
+        <item>MM.dd.yyyy hh:mm a</item>
+        <item>MM.dd.yyyy hh:mm:ss a</item>
+        <item>dd/MMM/yyyy</item>
+        <item>dd/MMM/yyyy HH:mm</item>
+        <item>dd MMM, yyyy</item>
+        <item>dd MMM, yyyy HH:mm</item>
+        <item>dd MMM, yyyy hh:mm a</item>
+        <item>ddth MMM yyyy</item>
+        <item>ddth MMM yyyy HH:mm</item>
+        <item>ddth MMM yyyy hh:mm a</item>
+        <item>dd MMMM, yyyy</item>
+        <item>dd MMMM, yyyy HH:mm</item>
+        <item>dd MMMM, yyyy hh:mm a</item>
+        <item>ddth MMMM yyyy</item>
+        <item>ddth MMMM yyyy HH:mm</item>
+        <item>ddth MMMM yyyy hh:mm a</item>
+        <item>MMM dd, yyyy</item>
+        <item>MMM dd, yyyy HH:mm</item>
+        <item>MMM dd, yyyy hh:mm a</item>
+        <item>MMMM dd, yyyy</item>
+        <item>MMMM dd, yyyy HH:mm</item>
+        <item>MMMM dd, yyyy hh:mm a</item>
+        <item>EEE, ddth MMM yyyy</item>
+        <item>EEE, ddth MMM yyyy HH:mm</item>
+        <item>EEE, ddth MMM yyyy hh:mm a</item>
+        <item>EEE, ddth MMMM yyyy</item>
+        <item>EEE, ddth MMMM yyyy HH:mm</item>
+        <item>EEE, ddth MMMM yyyy hh:mm a</item>
+        <item>EEEE, ddth MMM yyyy</item>
+        <item>EEEE, ddth MMM yyyy HH:mm</item>
+        <item>EEEE, ddth MMM yyyy hh:mm a</item>
+        <item>EEEE, ddth MMMM yyyy</item>
+        <item>EEEE, ddth MMMM yyyy HH:mm</item>
+        <item>EEEE, ddth MMMM yyyy hh:mm a</item>
+    </array>
+    <array name="ddate_entries">
+        <item>@string/DDMMYYYY</item>
+        <item>@string/MMDDYYYY</item>
+        <item>@string/YYYYMMDD</item>
+    </array>
+    <array name="fontstyle">
+        <item>Sf ui Text</item>
+        <item>Roboto</item>
+        <item>Rubik</item>
+        <item>SF Display</item>
+        <item>Poppins</item>
+        <item>Brix Slab</item>
+        <item>Assistant</item>
+        <item>Bariol</item>
+    </array>
+    <array name="fontstyle_assets">
+        <item>sfuitext_regular.otf</item>
+        <item>roboto_medium0.TTF</item>
+        <item>rubik_medium.ttf</item>
+        <item>sfdisplay_medium.TTF</item>
+        <item>poppins_medium.TTF</item>
+        <item>brix_slab_regular.otf</item>
+        <item>assistant_semibold.ttf</item>
+        <item>bariol_regular.otf</item>
+    </array>
+    <array name="gps_coordinates_array">
+        <item>@string/decimal</item>
+        <item>@string/dec_degs</item>
+        <item>@string/dec_degs_micro</item>
+        <item>@string/dec_mins</item>
+        <item>@string/deg_mins_secs</item>
+        <item>@string/dec_mins_secs</item>
+        <item>@string/UTM</item>
+        <item>@string/MGRS_USNG</item>
+    </array>
+    <array name="map_icon_array">
+        <item>@drawable/normal</item>
+        <item>@drawable/setellite</item>
+        <item>@drawable/tarrain</item>
+        <item>@drawable/hybrid</item>
+    </array>
+    <array name="map_title_array">
+        <item>@string/normal</item>
+        <item>@string/satellite</item>
+        <item>@string/terrain</item>
+        <item>@string/hybrid</item>
+    </array>
+    <array name="pressure">
+        <item>hpa</item>
+        <item>mmhg</item>
+        <item>inHg</item>
+    </array>
+
+    <array name="stamp_position">
+        <item>@string/pos_top</item>
+        <item>@string/pos_bottom</item>
+    </array>
+    <array name="temprature">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </array>
+    <array name="time_entries">
+        <item>@string/hours24</item>
+        <item>@string/hours12</item>
+    </array>
+    <array name="unit_entries">
+        <item>@string/Metric_meters</item>
+        <item>@string/Imperial_feet</item>
+    </array>
+    <array name="wI">
+        <item>@drawable/w01d</item>
+        <item>@drawable/w02d</item>
+        <item>@drawable/w03d</item>
+        <item>@drawable/w04d</item>
+        <item>@drawable/w09d</item>
+        <item>@drawable/w10d</item>
+        <item>@drawable/w11d</item>
+        <item>@drawable/w13d</item>
+        <item>@drawable/w50d</item>
+        <item>@drawable/w01n</item>
+        <item>@drawable/w02n</item>
+        <item>@drawable/w03n</item>
+        <item>@drawable/w04n</item>
+        <item>@drawable/w09n</item>
+        <item>@drawable/w10n</item>
+        <item>@drawable/w11n</item>
+        <item>@drawable/w13n</item>
+        <item>@drawable/w50n</item>
+    </array>
+    <array name="wind">
+        <item>km/h</item>
+        <item>mph</item>
+        <item>m/s</item>
+        <item>kt</item>
+    </array>
+</resources>

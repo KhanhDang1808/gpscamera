@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_title_template"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/Template1_new"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+            app:layout_constraintStart_toEndOf="@+id/btn_back"
+            app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+        <TextView
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/save"
+            android:textStyle="bold"
+            android:textColor="@color/color_main"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+        <RelativeLayout
+            android:id="@+id/dr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selected_remplate"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_back">
+
+            <include
+                android:id="@+id/layout_template"
+                layout="@layout/car_stamp_layout_new_6" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/stamp_setting"
+            android:textColor="@color/black"
+            android:textDirection="ltr"
+            android:textSize="14sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/dr" />
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/a">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:paddingTop="6dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ly_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_10dp"
+                    android:backgroundTint="#00FFFF00"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_56dp"
+                        android:background="#EEF0ED"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_address"
+                            android:layout_width="@dimen/_56dp"
+                            android:layout_height="@dimen/_56dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:padding="@dimen/_14dp"
+                            android:src="@drawable/ic_uncheck_box_tple" />
+
+                        <com.gps.camera.timestamp.photo.geotag.map.utils.view.MarqueeTextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/address"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <com.gps.camera.timestamp.photo.geotag.map.utils.view.MarqueeTextView
+                            android:id="@+id/txt_address"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textDirection="ltr"
+                            android:layout_marginStart="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:textAlignment="textEnd"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:text="@string/manual" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/address_s"
+                            app:tint="@color/black" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ly_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ly_1"
+                    android:layout_marginTop="10dp"
+                    android:elevation="@dimen/_10dp"
+                    android:backgroundTint="#00FFFF00"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin_latlog"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_56dp"
+                        android:background="#EEF0ED"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_lat"
+                            android:layout_width="@dimen/_56dp"
+                            android:layout_height="@dimen/_56dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:padding="@dimen/_14dp"
+                            android:src="@drawable/ic_uncheck_box_tple" />
+
+                        <com.gps.camera.timestamp.photo.geotag.map.utils.view.MarqueeTextView
+                            android:id="@+id/tt_lot_log"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/lat_lng"
+                            android:textDirection="ltr"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txt_latlog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:maxLines="1"
+                            android:text="45° 49&apos; 31.62&apos;&apos; N 88° 4&apos; 29..."
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            app:tint="@color/black"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/lati_s" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ly_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ly_2"
+                    android:layout_marginTop="10dp"
+                    android:elevation="@dimen/_10dp"
+                    android:backgroundTint="#00FFFF00"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin_datetime"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_56dp"
+                        android:background="#EEF0ED"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_datetime"
+                            android:layout_width="@dimen/_56dp"
+                            android:layout_height="@dimen/_56dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:padding="@dimen/_14dp"
+                            android:src="@drawable/ic_uncheck_box_tple" />
+
+                        <com.gps.camera.timestamp.photo.geotag.map.utils.view.MarqueeTextView
+                            android:id="@+id/tt_datetime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textDirection="ltr"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="@string/date" />
+
+                        <TextView
+                            android:id="@+id/txt_datetime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:maxLines="1"
+                            android:text="16/04/2024 "
+                            android:textAlignment="textEnd" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:tint="@color/black"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/date_s" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ly_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ly_3"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#00FFFF00"
+                    android:elevation="@dimen/_10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin_timezone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_56dp"
+                        android:background="#EEF0ED"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_timezone"
+                            android:layout_width="@dimen/_56dp"
+                            android:layout_height="@dimen/_56dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:padding="@dimen/_14dp"
+                            android:src="@drawable/ic_uncheck_box_tple" />
+
+                        <com.gps.camera.timestamp.photo.geotag.map.utils.view.MarqueeTextView
+                            android:id="@+id/tt_timezone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textDirection="ltr"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="@string/timer" />
+
+                        <TextView
+                            android:id="@+id/txt_timezone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:maxLines="1"
+                            android:text="11:55 AM"
+                            android:textAlignment="textEnd" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="12dp"
+                            app:tint="@color/black"
+                            android:src="@drawable/time_s" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ly_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ly_4"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#00FFFF00"
+                    android:elevation="@dimen/_10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin_numbering"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_56dp"
+                        android:background="#EEF0ED"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_numbering"
+                            android:layout_width="@dimen/_56dp"
+                            android:layout_height="@dimen/_56dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:padding="@dimen/_14dp"
+                            android:src="@drawable/ic_uncheck_box_tple" />
+
+                        <TextView
+                            android:id="@+id/tt_numbering"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textDirection="ltr"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="@string/numbering" />
+
+                        <com.gps.camera.timestamp.photo.geotag.map.utils.view.MarqueeTextView
+                            android:id="@+id/tv_numbering"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:maxLines="1"
+                            android:text="@string/travel_diaries"
+                            android:textAlignment="textEnd" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:tint="@color/black"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/numbers" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ly_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ly_5"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#00FFFF00"
+                    android:elevation="@dimen/_10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_56dp"
+                        android:background="#EEF0ED"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_logo"
+                            android:layout_width="@dimen/_56dp"
+                            android:layout_height="@dimen/_56dp"
+                            android:padding="@dimen/_14dp"
+                            android:src="@drawable/ic_select_btn" />
+
+                        <TextView
+                            android:id="@+id/tt_logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textDirection="ltr"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:text="@string/logo" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/round_rect"
+                            android:src="@drawable/img_logo_splash" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ly_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ly_6"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#00FFFF00"
+                    android:elevation="@dimen/_10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_56dp"
+                        android:background="#EEF0ED"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_notes"
+                            android:layout_width="@dimen/_56dp"
+                            android:layout_height="@dimen/_56dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:padding="@dimen/_14dp"
+                            android:src="@drawable/ic_uncheck_box_tple" />
+
+                        <TextView
+                            android:id="@+id/tt_hastag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="@string/note" />
+
+                        <com.gps.camera.timestamp.photo.geotag.map.utils.view.MarqueeTextView
+                            android:id="@+id/txt_notes"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:textDirection="ltr"
+                            android:text="Snowboard, bindings, boots"
+                            android:textAlignment="textEnd"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="12dp"
+                            app:tint="@color/black"
+                            android:src="@drawable/notes" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ly_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ly_7"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#00FFFF00"
+                    android:elevation="@dimen/_10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin_compass"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_56dp"
+                        android:background="#EEF0ED"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_compass"
+                            android:layout_width="@dimen/_56dp"
+                            android:layout_height="@dimen/_56dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:padding="@dimen/_14dp"
+                            android:src="@drawable/ic_uncheck_box_tple" />
+
+                        <com.gps.camera.timestamp.photo.geotag.map.utils.view.MarqueeTextView
+                            android:id="@+id/tt_comapss"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textDirection="ltr"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="@string/compass" />
+
+                        <TextView
+                            android:id="@+id/txt_compass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="220° SW"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:tint="@color/black"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/compass" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ly_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ly_9"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#00FFFF00"
+                    android:elevation="@dimen/_10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_magnetic"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_56dp"
+                        android:background="#EEF0ED"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_magneticc"
+                            android:layout_width="@dimen/_56dp"
+                            android:layout_height="@dimen/_56dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:padding="@dimen/_14dp"
+                            android:src="@drawable/ic_uncheck_box_tple" />
+
+                        <com.gps.camera.timestamp.photo.geotag.map.utils.view.MarqueeTextView
+                            android:id="@+id/tt_magneticf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textDirection="ltr"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="@string/magnetic_field" />
+
+                        <TextView
+                            android:id="@+id/txt_magnetic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:text="418 μT"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="12dp"
+                            app:tint="@color/black"
+                            android:src="@drawable/magnet" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ly_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ly_10"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#00FFFF00"
+                    android:elevation="@dimen/_10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin_fontstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_56dp"
+                        android:layout_below="@+id/ly_16"
+                        android:paddingStart="16dp"
+                        android:background="#EEF0ED"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txt_font"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:textDirection="ltr"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="@string/font_style" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="12dp"
+                            app:tint="@color/black"
+                            android:src="@drawable/ic_arrow_right_" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ly_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ly_17"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#00FFFF00"
+                    android:elevation="@dimen/_10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin_stampposition"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_56dp"
+                        android:layout_below="@+id/ly_17"
+                        android:paddingStart="16dp"
+                        android:background="#EEF0ED"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tt_stampposition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:textDirection="ltr"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="@string/stamp_position" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="12dp"
+                            app:tint="@color/black"
+                            android:src="@drawable/ic_arrow_right_" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

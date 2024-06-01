@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_12dp"
+        android:background="@drawable/touch_view_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_38dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfuitext_semibold"
+            android:text="@string/notes_hastag"
+            android:textAlignment="center"
+            android:textColor="@color/_3D3D3D"
+            android:textSize="@dimen/font_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="@dimen/_14dp"
+            android:background="@color/_c7c7c7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_72dp"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sub_textview_location_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfuitext_regular"
+                android:text="@string/title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/mEd_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/_DBDBDB"
+                    android:fontFamily="@font/sfuitext_regular"
+                    android:hint="@string/address"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="34"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/_3D3D3D"
+                    android:textColorHint="@color/_DBDBDB"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/btn_cleartitle"
+                    android:layout_width="@dimen/_48dp"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:contentDescription="@string/address"
+                    android:padding="@dimen/_8dp"
+                    android:src="@drawable/ic_close" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:background="@color/_E6E6E6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_72dp"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sub_textview_location_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfuitext_regular"
+                android:text="@string/notes" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/mEd_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/_DBDBDB"
+                    android:fontFamily="@font/sfuitext_regular"
+                    android:hint="@string/address"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="34"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/_3D3D3D"
+                    android:textColorHint="@color/_DBDBDB"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/btn_clearnote"
+                    android:layout_width="@dimen/_48dp"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="@dimen/_8dp"
+                    android:src="@drawable/ic_close" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:background="@color/_E6E6E6" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:background="@drawable/rect_inapp"
+            android:clickable="true"
+            android:fontFamily="@font/sfuitext_semibold"
+            android:paddingLeft="@dimen/_16dp"
+            android:paddingTop="@dimen/_8dp"
+            android:paddingRight="@dimen/_16dp"
+            android:paddingBottom="@dimen/_8dp"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_28dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_12dp"
+            android:fontFamily="@font/sfuitext_semibold"
+            android:text="@string/recent_added_note"
+            android:textColor="@color/_ffcc00"
+            android:textSize="@dimen/font_size_14" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginBottom="@dimen/_8dp" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

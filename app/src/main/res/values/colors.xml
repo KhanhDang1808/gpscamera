@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="Setting2_text_color">#0E77FF</color>
+    <color name="Setting_main_text_color">#000000</color>
+    <color name="_1A2421">#1a2421</color>
+    <color name="_333333">#333333</color>
+    <color name="_3D3D3D">#3d3d3d</color>
+    <color name="_3d3d3d">#3d3d3d</color>
+    <color name="_404040">#404040</color>
+    <color name="_747474">#747474</color>
+    <color name="_BFBFBF">#bfbfbf</color>
+    <color name="_DBDBDB">#dbdbdb</color>
+    <color name="_E6E6E6">#e6e6e6</color>
+    <color name="_F0F0F0">#f0f0f0</color>
+    <color name="_F8DC29">#f8dc29</color>
+    <color name="_a4a4a4">#a4a4a4</color>
+    <color name="_c7c7c7">#c7c7c7</color>
+    <color name="_e3e3e3">#e3e3e3</color>
+    <color name="_ffcc00">#0E77FF</color>
+
+    <color name="color_main">#19C5A3</color>
+
+
+    <color name="action_background">#ffffff</color>
+    <color name="blackError">#3a3a3a</color>
+
+    <color name="card_border_00000029">#08000029</color>
+
+    <color name="androidx_core_ripple_material_light">#1f000000</color>
+    <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
+    <color name="arrow_color">#a7a7a7</color>
+    <color name="background_floating_material_dark">@color/material_grey_800</color>
+    <color name="background_floating_material_light">@android:color/white</color>
+    <color name="background_material_dark">@color/material_grey_850</color>
+    <color name="background_material_light">@color/material_grey_50</color>
+
+    <color name="button_material_dark">#ff5a595b</color>
+    <color name="button_material_light">#ffd6d7d7</color>
+    <color name="colorBlack">#ff000000</color>
+    <color name="colorPrimary">#0E77FF</color>
+    <color name="colorPrimaryDark">#282929</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="divider_background">#0d000000</color>
+    <color name="purple_500">#1f1f21</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="soft_grey">#eceeef</color>
+    <color name="teal_700">#0E77FF</color>
+    <color name="tooltip_background_dark">#e6616161</color>
+    <color name="tooltip_background_light">#e6ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="red">#D02A23</color>
+
+</resources>

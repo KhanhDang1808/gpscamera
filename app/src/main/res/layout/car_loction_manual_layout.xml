@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_manual"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/location_toolbar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_map_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginBottom="@dimen/_8dp" />
+
+        <LinearLayout
+            android:id="@+id/lin_no_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="@dimen/_14dp"
+                android:src="@drawable/ic_location_not_list" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:fontFamily="@font/sfuitext_medium"
+                android:text="@string/no_loction_list_dis"
+                android:textAlignment="center"
+                android:textColor="@color/_BFBFBF"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_add_address"
+            android:layout_width="@dimen/_62dp"
+            android:layout_height="@dimen/_62dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_floating_button_add" />
+    </RelativeLayout>
+</LinearLayout>

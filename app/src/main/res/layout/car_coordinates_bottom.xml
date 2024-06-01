@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/coordi_radio_liner"
+        style="@style/Setting_Text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/coordi_radio"
+            android:layout_width="@dimen/_24dp"
+            android:layout_height="@dimen/_24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_radiobutton_checked"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/coordi_Main_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Displaying Coordinates"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sp" />
+
+            <TextView
+                android:id="@+id/coordi_sub_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quick_medium"
+                android:paddingTop="@dimen/_5dp"
+                android:text="Deg Min Secs"
+                android:textColor="@color/arrow_color"
+                android:textSize="@dimen/_12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

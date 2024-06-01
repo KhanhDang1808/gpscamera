@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nes_location_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/map_view"
+    android:background="@color/white"
+    android:isScrollContainer="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_16dp">
+
+        <LinearLayout
+            android:id="@+id/lin_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfuitext_medium"
+                android:lineSpacingExtra="@dimen/line_spacing_3sp"
+                android:text="@string/title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                style="@style/sub_textview_location_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfuitext_regular"
+                android:text="@string/add_title" />
+
+            <EditText
+                android:id="@+id/mEd_title"
+                style="@style/location_detail_edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfuitext_regular"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfuitext_medium"
+            android:lineSpacingExtra="@dimen/line_spacing_3sp"
+            android:text="@string/gps_coordinates"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/sub_textview_location_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfuitext_regular"
+                    android:text="@string/latitude" />
+
+                <EditText
+                    android:id="@+id/mEd_latitude"
+                    style="@style/location_detail_edittext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/sfuitext_regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/sub_textview_location_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfuitext_regular"
+                    android:text="@string/Longitude" />
+
+                <EditText
+                    android:id="@+id/mEd_longitude"
+                    style="@style/location_detail_edittext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/sfuitext_regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12dp"
+            android:fontFamily="@font/sfuitext_medium"
+            android:lineSpacingExtra="@dimen/line_spacing_3sp"
+            android:text="@string/location"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            style="@style/sub_textview_location_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfuitext_regular"
+            android:text="@string/line_1" />
+
+        <EditText
+            android:id="@+id/mEd_loc_line_1"
+            style="@style/location_detail_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfuitext_regular" />
+
+        <TextView
+            style="@style/sub_textview_location_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfuitext_regular"
+            android:text="@string/line_2" />
+
+        <EditText
+            android:id="@+id/mEd_city"
+            style="@style/location_detail_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfuitext_regular"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/sub_textview_location_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfuitext_regular"
+            android:text="@string/line_3" />
+
+        <EditText
+            android:id="@+id/mEd_state"
+            style="@style/location_detail_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfuitext_regular"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/sub_textview_location_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfuitext_regular"
+            android:text="@string/line_4" />
+
+        <EditText
+            android:id="@+id/mEd_country"
+            style="@style/location_detail_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfuitext_regular"
+            android:maxLines="1"
+            android:singleLine="true" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

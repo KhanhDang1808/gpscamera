@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@android:color/black">
+    <item android:id="@android:id/background">
+        <vector android:height="67dp" android:width="66dp" android:viewportWidth="66" android:viewportHeight="67">
+            <group>
+                <clip-path android:pathData="M0,0h66v67h-66z"/>
+                <path android:fillColor="#000" android:pathData="M33,32m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0"/>
+                <path android:fillColor="#fff" android:pathData="M42,32.066a0.912,0.912 0,0 1,-0.273 0.645,0.858 0.858,0 0,1 -0.634,0.262h-0.011l-7.119,-0.011v7.163a0.917,0.917 0,0 1,-0.919 0.919,0.908 0.908,0 0,1 -0.919,-0.908L32.125,32.95l-7.207,-0.022a0.922,0.922 0,0 1,-0.919 -0.908,0.934 0.934,0 0,1 0.908,-0.919h0.011l7.207,0.022v-7.207a0.931,0.931 0,0 1,0.919 -0.919,0.934 0.934,0 0,1 0.919,0.919v7.217l7.119,0.011A0.939,0.939 0,0 1,42 32.066Z" android:strokeColor="#fff" android:strokeWidth="1"/>
+            </group>
+        </vector>
+    </item>
+</ripple>

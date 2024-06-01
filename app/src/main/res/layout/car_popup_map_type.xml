@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_8dp"
+        app:cardCornerRadius="@dimen/_4dp"
+        app:cardElevation="@dimen/_2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/li_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_48"
+                    android:layout_height="@dimen/icon_size_48"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:background="@drawable/rect_map"
+                    android:src="@drawable/normal" />
+
+                <TextView
+                    style="@style/map_type_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/normal" />
+
+                <ImageView
+                    android:id="@+id/img_normal_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:src="@drawable/ic_tick"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/li_setellite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_48"
+                    android:layout_height="@dimen/icon_size_48"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:background="@drawable/rect_map"
+                    android:src="@drawable/setellite" />
+
+                <TextView
+                    style="@style/map_type_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/satellite" />
+
+                <ImageView
+                    android:id="@+id/img_setelite_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:src="@drawable/ic_tick"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/li_terrain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_48"
+                    android:layout_height="@dimen/icon_size_48"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:background="@drawable/rect_map"
+                    android:src="@drawable/tarrain" />
+
+                <TextView
+                    style="@style/map_type_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terrain" />
+
+                <ImageView
+                    android:id="@+id/img_terrain_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:src="@drawable/ic_tick"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/li_hybird"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_48"
+                    android:layout_height="@dimen/icon_size_48"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:background="@drawable/rect_map"
+                    android:src="@drawable/hybrid" />
+
+                <TextView
+                    style="@style/map_type_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hybrid" />
+
+                <ImageView
+                    android:id="@+id/img_hybird_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:src="@drawable/ic_tick"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
